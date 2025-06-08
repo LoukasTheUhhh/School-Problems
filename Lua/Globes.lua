@@ -5,6 +5,10 @@ How many globes are there in total?
 ]]--
 io.write("How many White Globes Are There?\n")
 local a = io.read()
+if a >= 1000 then
+  error("Sorry,there are Too Many White Globes.")
+elseif a <= 2 then
+  error("Sorry,there aren't enough White Globes.")
 local whiteGlobes = toNumber(a)
 io.write('\n')
 io.write("There are "..a.." White Globes.")
